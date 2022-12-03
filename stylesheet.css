@@ -1,0 +1,125 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #26d0c9;
+    color: #fff;
+    height: 90px; /*heightなくても背景色変わったのはheaderの中身が数行あるから？*/
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li { /*リストの一つ一つを横並びにしたいからliを指定する*/
+  float: left;
+  padding: 33px 20px;
+}
+
+.top-wrapper {
+  padding: 100px 80px;
+}
+
+.top-container h1 {
+  font-size: 140px;
+}
+
+.top-container span {
+  color: red;
+}
+
+.top-container h2 { /*h2を指定しなかった時のサイズの参照はどこなの*/
+  font-size: 60px;
+}
+
+.contents {
+  height: 500px;
+  margin: 0 0 100px 80px; /*top right why 0?これによってタイトル下の線の右側が永遠に伸びてる*/
+}
+
+.contents-title {
+  font-size: 28px;
+  border-bottom: 2px solid #dee7ec;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.lesson {
+  float: left;
+  margin-right: 40px;
+}
+
+.lesson p {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.contact {
+  margin: 100px 80px;
+}
+
+input, textarea {
+  border: 1px solid #dee7ec;
+  padding: 20px;
+  font-size: 18px;
+  width: 400px;
+}
+
+.contact-form p {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-submit {
+  font-size: 18px;
+  border-radius: 4px;
+  color: #889eab;
+  opacity: 0.8;
+  background-color: #dee7ec;
+  box-shadow: 5px 7px;
+}
+
+.contact-submit:hover {
+  opacity: 1;
+}
+
+.contact-submit:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 200px;
+  padding: 40px;
+}
+
+.footer-right {
+  font-size: 32px;
+  float: left;
+}
+
+.footer-left {
+  float: right;
+}
+
+.footer-list li{
+  padding-bottom: 20px;
+}
